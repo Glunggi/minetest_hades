@@ -55,7 +55,7 @@ https://forum.minetest.net/viewtopic.php?id=8054
 mesecons
 https://forum.minetest.net/viewtopic.php?t=628
 
-mobs redo (an old version)
+mobs redo (an old version with elements from adventuretestgame)
 https://forum.minetest.net/viewtopic.php?t=9917
 
 pipeworks
