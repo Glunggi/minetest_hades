@@ -208,6 +208,7 @@ Things you should know:
  l= ladder
  o= light
  s= stone
+ -=air
  ***********
  ssswlsss
  
@@ -221,9 +222,9 @@ Things you should know:
  
  ssswssss
  
- ss w  ss
+ ss-w--ss
  
- ss w  ss
+ ss-w--ss
  
  Lavasource
  
