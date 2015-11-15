@@ -1,1 +1,0 @@
-mobs_mutant = creature Zombie 2 from Game Wasteland by Blockmen
