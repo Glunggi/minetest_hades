@@ -64,6 +64,7 @@ function mobs:register_mob(name, def)
 		v_start = false,
 		old_y = nil,
 		lifetimer = 600,
+		health = 0,
 		tamed = false,
 		last_state = nil,
 		pause_timer = 0,
@@ -628,10 +629,11 @@ local yaw = 0
 			self.object:set_hp( newHP )
 			--]]
 			
-			-- if self.health == 0 then
+		if self.health == 0 then
 			-- HP
 			-- note: attention: real hp.max = hp.min + hp.max * highfactor
 			local highdefi = self.object:getpos().y
+			highfa = 0
 			if highdefi >= 0 then highfa = 0.1
 			elseif highdefi <= -1 and highdefi >= -99 then highfa = 0.2
 			elseif highdefi <= -100 and highdefi >= -249 then highfa = 0.3
@@ -643,9 +645,9 @@ local yaw = 0
 			elseif highdefi <= -7500 and highdefi >= -9999 then highfa = 0.9
 			elseif highdefi <= -10000 then highfa = 1.0
 			end
-			local newHP = self.hp_min + math.floor( self.hp_max * highfa )
-		--end
-		    self.object:set_hp( newHP )
+			self.health = self.hp_min + math.floor( self.hp_max * highfa )
+		  end
+		    self.object:set_hp( self.health )
 
 			self.object:set_armor_groups({fleshy=self.armor})
 			self.object:setacceleration({x=0, y=-10, z=0})
