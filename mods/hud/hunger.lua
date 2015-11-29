@@ -63,6 +63,10 @@ overwrite("default:tomatosalad", 6)
 overwrite("default:tomato_potato_salad", 8)
 if minetest.get_modpath("farming") ~= nil then
 	overwrite("farming:bread", 4)
+	overwrite("farming:strawberry", 2)
+	overwrite("farming:potato", 0)
+	overwrite("farming:tomato", 2)
+	overwrite("farming:spice", 0)
 end
 
 
