@@ -204,7 +204,7 @@ end
 
 minetest.register_node("pipeworks:nodebreaker_off", {
 	description = "Node Breaker",
-	tile_images = {"pipeworks_nodebreaker_top_off.png","pipeworks_nodebreaker_bottom_off.png","pipeworks_nodebreaker_side2_off.png","pipeworks_nodebreaker_side1_off.png",
+	tiles = {"pipeworks_nodebreaker_top_off.png","pipeworks_nodebreaker_bottom_off.png","pipeworks_nodebreaker_side2_off.png","pipeworks_nodebreaker_side1_off.png",
 			"pipeworks_nodebreaker_back.png","pipeworks_nodebreaker_front_off.png"},
 	is_ground_content = true,
 	paramtype2 = "facedir",
@@ -243,7 +243,7 @@ minetest.register_node("pipeworks:nodebreaker_off", {
 
 minetest.register_node("pipeworks:nodebreaker_on", {
 	description = "Node Breaker",
-	tile_images = {"pipeworks_nodebreaker_top_on.png","pipeworks_nodebreaker_bottom_on.png","pipeworks_nodebreaker_side2_on.png","pipeworks_nodebreaker_side1_on.png",
+	tiles = {"pipeworks_nodebreaker_top_on.png","pipeworks_nodebreaker_bottom_on.png","pipeworks_nodebreaker_side2_on.png","pipeworks_nodebreaker_side1_on.png",
 			"pipeworks_nodebreaker_back.png","pipeworks_nodebreaker_front_on.png"},
 	mesecons= {effector={rules=pipeworks.rules_all,action_on=node_breaker_on, action_off=node_breaker_off}},
 	is_ground_content = true,
