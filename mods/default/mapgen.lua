@@ -24,14 +24,14 @@ minetest.register_alias("mapgen_sandstone", "default:tuff")
 
 -- Flora
 
-minetest.register_alias("mapgen_tree", "default:cobble")
-minetest.register_alias("mapgen_leaves", "default:cobble")
-minetest.register_alias("mapgen_apple", "default:cobble")
-minetest.register_alias("mapgen_jungletree", "default:cobble")
-minetest.register_alias("mapgen_jungleleaves", "default:cobble")
-minetest.register_alias("mapgen_junglegrass", "default:cobble")
-minetest.register_alias("mapgen_pine_tree", "default:cobble")
-minetest.register_alias("mapgen_pine_needles", "default:cobble")
+minetest.register_alias("mapgen_tree", "air")
+minetest.register_alias("mapgen_leaves", "air")
+minetest.register_alias("mapgen_apple", "air")
+minetest.register_alias("mapgen_jungletree", "air")
+minetest.register_alias("mapgen_jungleleaves", "air")
+minetest.register_alias("mapgen_junglegrass", "air")
+minetest.register_alias("mapgen_pine_tree", "air")
+minetest.register_alias("mapgen_pine_needles", "air")
 
 -- Dungeons
 
@@ -42,7 +42,7 @@ minetest.register_alias("mapgen_sandstonebrick", "default:sandstonebrick")
 minetest.register_alias("mapgen_stair_sandstonebrick", "stairs:stair_sandstonebrick")
 
 minetest.register_on_mapgen_init(function(mgparams)
-	minetest.set_mapgen_params({mgname="v6", mg_flags={"nodungeons", "notrees", "caves"}, mgv6_spflags={"mudflow", "nosnowbiomes", "nojungles"}, "water_level=-5"})
+	minetest.set_mapgen_params({mgname="v6", mg_flags={"nodungeons", "notrees", "caves"}, mgv6_spflags={"mudflow", "nosnowbiomes", "notrees", "nojungles"}, "water_level=-5"})
 end)
 
 --
